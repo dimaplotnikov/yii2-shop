@@ -9,8 +9,7 @@ user2/123456
 
 Edit your Apache vhost.conf file and add:
 -------------------
-
-
+```
 <VirtualHost *:80>
 ServerName yii2-shop
 DocumentRoot "%sprogdir%/domains/yii2-shop/frontend/web"
@@ -20,8 +19,8 @@ Options +Indexes
 AllowOverride All
 </Directory>
 </VirtualHost>
+```
 
-==============================
 Yii 2 Advanced Project Template
 ===============================
 
