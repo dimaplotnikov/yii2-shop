@@ -27,7 +27,7 @@
         "costa-rico/yii2-images": "dev-master",
         "yiisoft/yii2-authclient": "*",
         "nodge/yii2-eauth": "~2.0",
-        "kartik-v/yii2-helpers": "dev-master",
+        "kartik-v/yii2-helpers": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
