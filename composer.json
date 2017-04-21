@@ -28,7 +28,6 @@
         "yiisoft/yii2-authclient": "*",
         "nodge/yii2-eauth": "~2.0",
         "kartik-v/yii2-helpers": "dev-master",
-        "2amigos/yii2-google-places-library": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

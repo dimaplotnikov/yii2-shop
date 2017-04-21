@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="order-update">
 
-    <h1>Редактирование заказа №<?= $model->id ?></h1>
+    <h1>Editing order №<?= $model->id ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,

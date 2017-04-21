@@ -40,27 +40,24 @@ $this->params['breadcrumbs'][] = $this->title;
             'price',
             'slug',
             'description',
-    //            [
-    //                'attribute' => 'gallery',
-    //                'value' => "<img src='{$img->getUrl()}'>",
-    //                'format' => 'html'
-    //            ],
+            'made_in',
+            'color',
             [
                 'attribute' => 'hit',
-                'value' => !$model->hit ? '<span class="text-danger">Нет</span>' :
-                    '<span class="text-success">Да</span>',
+                'value' => !$model->hit ? '<span class="text-danger">No</span>' :
+                    '<span class="text-success">Yes</span>',
                 'format' => 'html'
             ],
             [
                 'attribute' => 'new',
-                'value' => !$model->new ? '<span class="text-danger">Нет</span>' :
-                    '<span class="text-success">Да</span>',
+                'value' => !$model->new ? '<span class="text-danger">No</span>' :
+                    '<span class="text-success">Yes</span>',
                 'format' => 'html'
             ],
             [
                 'attribute' => 'sale',
-                'value' => !$model->sale ? '<span class="text-danger">Нет</span>' :
-                    '<span class="text-success">Да</span>',
+                'value' => !$model->sale ? '<span class="text-danger">No</span>' :
+                    '<span class="text-success">Yes</span>',
                 'format' => 'html'
             ],
             [
@@ -71,8 +68,6 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]) ?>
     <?php
-
-    // print_r($gallery );
     $img_str='';
     echo ' <div class="row">';
     foreach($gallery as $img_g){

@@ -18,6 +18,8 @@ use Yii;
  * @property string $hit
  * @property string $new
  * @property string $sale
+ * @property string $made_in
+ * @property string $color
  */
 class Product extends \yii\db\ActiveRecord
 {
@@ -48,9 +50,9 @@ class Product extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['category_id', 'name', 'hit', 'new', 'sale', 'slug'], 'required'],
+            [['category_id', 'name', 'hit', 'new', 'sale', 'slug','made_in','color' ], 'required'],
             [['category_id'], 'integer'],
-            [['content', 'hit', 'new', 'sale'], 'string'],
+            [['content', 'hit', 'new', 'sale','made_in','color'], 'string'],
             [['price'], 'number'],
             [['name', 'slug', 'description', 'img'], 'string', 'max' => 255],
             [['image'], 'file', 'extensions' => 'png, jpg'],
@@ -76,6 +78,8 @@ class Product extends \yii\db\ActiveRecord
             'hit' => 'Hit',
             'new' => 'New',
             'sale' => 'Sale',
+            'made_in' => 'Made in',
+            'color' => 'Color'
         ];
     }
     public function upload(){

@@ -39,12 +39,12 @@ use yii\helpers\Url;
                 </div>
                 <div class="span span2">
                     <p class="left">MADE IN</p>
-                    <p class="right">China</p>
+                    <p class="right"><?= $product->made_in ?></p>
                     <div class="clearfix"></div>
                 </div>
                 <div class="span span3">
                     <p class="left">COLOR</p>
-                    <p class="right">White</p>
+                    <p class="right"><?= $product->color ?></p>
                     <div class="clearfix"></div>
                 </div>
                 <div class="purchase">

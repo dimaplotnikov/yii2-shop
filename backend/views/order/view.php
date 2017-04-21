@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="order-view">
 
-    <h1>Просмотр заказа №<?= $model->id ?></h1>
+    <h1>Order view №<?= $model->id ?></h1>
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
@@ -36,8 +36,8 @@ $this->params['breadcrumbs'][] = $this->title;
             //'status',
             [
                 'attribute' => 'status',
-                'value' => !$model->status ? '<span class="text-danger">Активен</span>' :
-                    '<span class="text-success">Завершен</span>',
+                'value' => !$model->status ? '<span class="text-danger">Active</span>' :
+                    '<span class="text-success">Completed</span>',
                 'format' => 'html'
             ],
             'name',
@@ -53,10 +53,10 @@ $this->params['breadcrumbs'][] = $this->title;
         <table class="table table-hover table-striped">
             <thead>
             <tr>
-                <th>Наименование</th>
-                <th>Количество</th>
-                <th>Цена</th>
-                <th>Сумма</th>
+                <th>Name</th>
+                <th>Quanity</th>
+                <th>Price</th>
+                <th>Summary</th>
             </tr>
             <tbody>
             <?php foreach($items as $item): ?>

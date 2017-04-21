@@ -36,6 +36,10 @@ mihaildev\elfinder\Assets::noConflict($this);
 
     <?= $form->field($model, 'gallery[]')->fileInput(['multiple' => true, 'accept' => 'image/*']) ?>
 
+    <?= $form->field($model, 'made_in')->textInput() ?>
+
+    <?= $form->field($model, 'color')->textInput() ?>
+
     <?= $form->field($model, 'hit')->checkbox(['0', '1',]) ?>
 
     <?= $form->field($model, 'new')->checkbox(['0', '1',]) ?>

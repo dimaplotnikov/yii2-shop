@@ -18,20 +18,17 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
 
             'id',
-            //'parent_id',
             [
                 'attribute' => 'parent_id',
                 'value' => function($data)
                 {
                     return $data->category->name ? $data->category->name :
-                        'Самостоятельная категория';
+                        'Separate category';
                 },
             ],
             'name',
             'slug',
             'keywords:ntext',
-            // 'desciption:ntext',
-
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
